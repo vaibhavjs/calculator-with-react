@@ -1,4 +1,5 @@
 import { useState } from "react";
+import stringMath from "string-math";
 import "./App.css";
 
 const App = () => {
@@ -16,7 +17,7 @@ const App = () => {
   };
   const calculate = () => {
     try {
-      setResult(eval(result).toString());
+      setResult(stringMath(result));
     } catch (err) {
       setResult("syntax error");
     }
