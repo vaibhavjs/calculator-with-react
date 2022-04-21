@@ -7,7 +7,6 @@ const App = () => {
 
   const clickHandler = (e) => {
     setResult(result.concat(e.target.name));
-    console.log(result.concat(e.target.name));
   };
   const clear = () => {
     setResult("");
