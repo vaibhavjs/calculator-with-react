@@ -5,7 +5,7 @@ import "./App.css";
 const App = () => {
   const [result, setResult] = useState("");
 
-  const handleCLick = (e) => {
+  const clickHandler = (e) => {
     setResult(result.concat(e.target.name));
     console.log(result.concat(e.target.name));
   };
@@ -34,49 +34,49 @@ const App = () => {
         </button>
         <button onClick={deleteScreen}>Del</button>
 
-        <button name="/" onClick={handleCLick}>
+        <button name="/" onClick={clickHandler}>
           &divide;
         </button>
-        <button name="7" onClick={handleCLick}>
+        <button name="7" onClick={clickHandler}>
           7
         </button>
-        <button name="8" onClick={handleCLick}>
+        <button name="8" onClick={clickHandler}>
           8
         </button>
-        <button name="9" onClick={handleCLick}>
+        <button name="9" onClick={clickHandler}>
           9
         </button>
-        <button name="*" onClick={handleCLick}>
+        <button name="*" onClick={clickHandler}>
           &times;
         </button>
-        <button name="4" onClick={handleCLick}>
+        <button name="4" onClick={clickHandler}>
           4
         </button>
-        <button name="5" onClick={handleCLick}>
+        <button name="5" onClick={clickHandler}>
           5
         </button>
-        <button name="6" onClick={handleCLick}>
+        <button name="6" onClick={clickHandler}>
           6
         </button>
-        <button name="-" onClick={handleCLick}>
+        <button name="-" onClick={clickHandler}>
           -
         </button>
-        <button name="1" onClick={handleCLick}>
+        <button name="1" onClick={clickHandler}>
           1
         </button>
-        <button name="2" onClick={handleCLick}>
+        <button name="2" onClick={clickHandler}>
           2
         </button>
-        <button name="3" onClick={handleCLick}>
+        <button name="3" onClick={clickHandler}>
           3
         </button>
-        <button name="+" onClick={handleCLick}>
+        <button name="+" onClick={clickHandler}>
           +
         </button>
-        <button name="0" onClick={handleCLick}>
+        <button name="0" onClick={clickHandler}>
           0
         </button>
-        <button name="." onClick={handleCLick}>
+        <button name="." onClick={clickHandler}>
           .
         </button>
         <button className="span-two" onClick={calculate}>
